@@ -1,5 +1,5 @@
 package PDF::Writer;
-$PDF::Writer::VERSION = '0.03';
+$PDF::Writer::VERSION = '0.04';
 
 use strict;
 use vars '$Backend';
@@ -10,7 +10,8 @@ PDF::Writer - PDF writer abstraction layer
 
 =head1 VERSION
 
-This document describes version 0.03 of PDF::Writer, released July 17th.
+This document describes version 0.04 of PDF::Writer, released May 6,
+2005.
 
 =head1 SYNOPSIS
 
@@ -70,7 +71,7 @@ Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright 2004 by Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>.
+Copyright 2004, 2005 by Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

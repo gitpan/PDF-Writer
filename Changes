@@ -1,5 +1,8 @@
-----------------------------------------------------------------------
-r6167:  autrijus | 2004-07-18T00:38:12.976834Z
+== Changes for 0.04 - 2005-05-06
 
-* 0.03, initial commit to CPAN, moved from PDF-Template-PDFAPI2.
-----------------------------------------------------------------------
+PDF::API2 is no longer "developer release", so we simply
+depend on it.
+
+== Changes for 0.03 - 2004-07-18
+
+Initial commit to CPAN, moved from PDF-Template-PDFAPI2.
