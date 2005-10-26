@@ -1,6 +1,10 @@
 package PDF::Writer::pdfapi2;
 
 use strict;
+use warnings;
+
+our $VERSION = '0.01';
+
 use charnames ':full';
 use PDF::API2 0.40;
 
@@ -33,7 +37,7 @@ sub new {
 sub open {
     my ($self, $f) = @_;
     $self->{filename} = $f;
-    return (!-e $f or (!-d $f and -w $f));
+    return !$f || (!-e $f or (!-d $f and -w $f));
 }
 
 sub save {

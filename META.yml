@@ -1,13 +1,24 @@
+---
 name: PDF-Writer
-version: 0.04
+version: 0.05
+author: ~
 abstract: PDF writer abstraction layer
-author: Autrijus Tang <autrijus@autrijus.org>
 license: perl
-distribution_type: module
 requires:
   perl: 5.6.0
-  PDF::API2: 0.40
-no_index:
-  directory:
-    - inc
-generated_by: Module::Install version 0.36
+build_requires:
+  Test::More: 0.47
+provides:
+  PDF::Writer:
+    file: lib/PDF/Writer.pm
+    version: 0.05
+  PDF::Writer::mock:
+    file: lib/PDF/Writer/mock.pm
+    version: 0.03
+  PDF::Writer::pdfapi2:
+    file: lib/PDF/Writer/pdfapi2.pm
+    version: 0.01
+  PDF::Writer::pdflib:
+    file: lib/PDF/Writer/pdflib.pm
+    version: 0.01
+generated_by: Module::Build version 0.2701

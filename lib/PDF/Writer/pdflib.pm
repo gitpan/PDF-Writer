@@ -1,6 +1,10 @@
 package PDF::Writer::pdflib;
 
 use strict;
+use warnings;
+
+our $VERSION = '0.01';
+
 use pdflib_pl;
 
 =head1 NAME
@@ -88,7 +92,7 @@ sub color {
 
 sub font_size {
     my $self = shift; my $p = $self->{pdf};
-    return pdflib_pl::PDF_get_value($p, 'fontsize', undef);
+    return pdflib_pl::PDF_get_value($p, 'fontsize', 0);
 }
 
 sub image_width {
