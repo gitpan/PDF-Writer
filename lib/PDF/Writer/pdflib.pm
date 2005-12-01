@@ -3,7 +3,7 @@ package PDF::Writer::pdflib;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use pdflib_pl;
 
@@ -114,7 +114,7 @@ while (my ($k, $v) = each %dispatch) {
         my $self = shift;
         my $rv = &$method($self->{pdf}, @_);
 
-        if ($v ne 'show_boxed') {
+        if ($v ne 'show_boxed' && defined $rv) {
             $rv = '0 but true' if $rv eq '0';
             $rv = undef if $rv eq '-1';
         }
